@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+	<link rel="stylesheet" href="assets/stylesheets/app.css">
+</head>
+<body>
+	<h1>Rock Paper Scissors</h1>
+
+	<div id="stage">
+
+		<div id="scoreboard">
+			<div id="wins-title">WIN</div><div id="wins-number">0</div>
+			<div id="draws-title">DRAW</div><div id="draws-number">0</div>
+			<div id="losses-title">LOSE</div><div id="losses-number">0</div>
+		</div>
+
+		<div id="rps-select">
+			<h3>Choose wisely:</h3>
+			<div id="rock-choice" class="option"></div>
+			<div id="paper-choice" class="option"></div>
+			<div id="scissors-choice" class="option"></div>
+		</div>
+
+		<div id="rps-results">
+			<h3 id="winlose-text">Win/Lose</h3>
+			YOU
+			<div class="horizontal-gap"></div>
+			<div id="rock-show"></div>
+			<div id="paper-show"></div>
+			<div id="scissors-show"></div>
+			<div class="horizontal-gap"></div>
+			<div class="horizontal-gap"></div>
+			<div id="rock-comp"></div>
+			<div id="paper-comp"></div>
+			<div id="scissors-comp"></div>
+			COMPUTER
+			<div id="play-again">Play Again</div>
+		</div>
+
+	</div>
+
+	<footer>&copy; 2016 - CRJ</footer>
+
+	<script src='assets/javascripts/app.js'></script>
+</body>
+</html>
