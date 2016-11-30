@@ -52,7 +52,6 @@ scissorsChoice.addEventListener('click', function() {
 
 function compSelect() {
 	compChoice = Math.floor(Math.random() * 3 + 1);
-	console.log(compChoice);
 }
 
 function showHands() {
@@ -94,54 +93,47 @@ function showHands() {
 }
 
 function outcome() {
-	if (userChoice === 1) {
-		switch(compChoice) {
-			case 1:
-			winLoseText.innerText = "It's a draw!"
-			setTimeout(function(){addDraw()}, 1250);
-				break;
-			case 2:
-			winLoseText.innerText = "You lose!"
-			setTimeout(function(){addLoss()}, 1250);
-				break;
-			case 3:
-			winLoseText.innerText = "You win!"
-			setTimeout(function(){addWin()}, 1250);
-				break;
+	if (userChoice === compChoice) {
+		winLoseText.innerText = "It's a draw!"
+		setTimeout(function(){addDraw()}, 1250);
+	} else {
+		if (userChoice === 1) {
+			switch(compChoice) {
+				case 2:
+				winLoseText.innerText = "You lose!"
+				setTimeout(function(){addLoss()}, 1250);
+					break;
+				case 3:
+				winLoseText.innerText = "You win!"
+				setTimeout(function(){addWin()}, 1250);
+					break;
+			}
 		}
-	}
 
-	if (userChoice === 2) {
-		switch(compChoice) {
-			case 2:
-			winLoseText.innerText = "It's a draw!"
-			setTimeout(function(){addDraw()}, 1250);
-				break;
-			case 3:
-			winLoseText.innerText = "You lose!"
-			setTimeout(function(){addLoss()}, 1250);
-				break;
-			case 1:
-			winLoseText.innerText = "You win!"
-			setTimeout(function(){addWin()}, 1250);
-				break;
+		if (userChoice === 2) {
+			switch(compChoice) {
+				case 3:
+				winLoseText.innerText = "You lose!"
+				setTimeout(function(){addLoss()}, 1250);
+					break;
+				case 1:
+				winLoseText.innerText = "You win!"
+				setTimeout(function(){addWin()}, 1250);
+					break;
+			}
 		}
-	}
 
-	if (userChoice === 3) {
-		switch(compChoice) {
-			case 3:
-			winLoseText.innerText = "It's a draw!"
-			setTimeout(function(){addDraw()}, 1250);
-				break;
-			case 1:
-			winLoseText.innerText = "You lose!"
-			setTimeout(function(){addLoss()}, 1250);
-				break;
-			case 2:
-			winLoseText.innerText = "You win!"
-			setTimeout(function(){addWin()}, 1250);
-				break;
+		if (userChoice === 3) {
+			switch(compChoice) {
+				case 1:
+				winLoseText.innerText = "You lose!"
+				setTimeout(function(){addLoss()}, 1250);
+					break;
+				case 2:
+				winLoseText.innerText = "You win!"
+				setTimeout(function(){addWin()}, 1250);
+					break;
+			}
 		}
 	}
 }
