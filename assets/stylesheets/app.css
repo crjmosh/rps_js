@@ -102,24 +102,28 @@ body {
 
 #wins-title {
 	padding: 0 10px;
+	margin-left: 22px;
 	color: white;
 	font-size: 40px;
 	background-color: blue;
 	border-right: 2px solid darkblue;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	display: inline;
+	float: left;
 }
 
 #wins-number {
 	padding: 0 10px;
 	margin-right: 20px;
-	color: white;
+	width: 75px;
+	height: 60px;
 	font-size: 40px;
+	line-height: 60px;
+	color: white;
 	background-color: blue;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
-	display: inline;
+	float: left;
 }
 
 #draws-title {
@@ -130,18 +134,21 @@ body {
 	border-right: 2px solid darkgreen;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	display: inline;
+	float: left;
 }
 
 #draws-number {
 	padding: 0 10px;
 	margin-right: 20px;
-	color: white;
+	width: 75px;
+	height: 60px;
 	font-size: 40px;
+	line-height: 60px;
+	color: white;
 	background-color: green;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
-	display: inline;
+	float: left;
 }
 
 #losses-title {
@@ -152,17 +159,24 @@ body {
 	border-right: 2px solid darkred;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	display: inline;
+	float: left;
 }
 
 #losses-number {
 	padding: 0 10px;
-	color: white;
+	width: 75px;
+	height: 60px;
 	font-size: 40px;
+	line-height: 60px;
+	color: white;
 	background-color: red;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
-	display: inline;
+	float: left;
+}
+
+.clearfix {
+	clear: both;
 }
 
 #play-again {
